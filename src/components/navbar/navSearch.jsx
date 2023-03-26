@@ -12,8 +12,10 @@ const NavSearch = () => {
       className="
     "
     >
-      <div className="flex min-w-full">
-        {toggle && <input className="border w-72"></input>}
+      <div className="flex min-w-full items-center">
+        {toggle && (
+          <input className="border-2 rounded-md w-72 h-8 mr-4 "></input>
+        )}
         <FaSearch
           className="text-2xl text-gray-400 hover:cursor-pointer"
           onClick={handletoggle}

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Sellercard = (props) => {
-  const { quote, price, author, color } = props;
+  const { price, author } = props;
 
   return (
     <div>

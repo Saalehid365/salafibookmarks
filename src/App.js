@@ -1,18 +1,20 @@
 import "./App.css";
-import Feature1 from "./mains/feature1";
-import Features from "./mains/features";
-import Hero from "./mains/hero";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./mains/navbar";
-import Topsellers from "./mains/topsellers";
+import Footer from "./mains/footer";
+import Home from "./pages/home";
 
 function App() {
   return (
     <div className="App  flex flex-col ">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Feature1 />
-      <Topsellers />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

@@ -17,10 +17,4 @@ export const bookmarks = [
     Price: "£2.99",
     Color: "Yellow",
   },
-  {
-    Quote: " lhibcskjncnasj",
-    Author: "Ibn Sireen",
-    Price: "£2.99",
-    Color: "Green",
-  },
 ];

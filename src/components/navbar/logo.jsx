@@ -3,11 +3,11 @@ import React from "react";
 const Logo = () => {
   return (
     <div
-      className="
+      className=" text-2xl
     "
     >
       <p>
-        Salafi<span className="font-bold">Bookmarks</span>
+        Salafi<span className="font-bold text-yellow-600">Bookmarks</span>
       </p>
     </div>
   );

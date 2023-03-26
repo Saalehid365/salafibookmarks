@@ -1,8 +1,6 @@
 import React from "react";
 import MainImg from "../components/hero/mainImg";
-import SideImg from "../components/hero/sideImg";
 import Title from "../components/hero/title";
-import TitleText from "../components/hero/titleText";
 
 const Hero = () => {
   return (
