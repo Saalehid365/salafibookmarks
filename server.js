@@ -1,8 +1,7 @@
 const express = require("express");
 var cors = require("cors");
-const stripe = require("stripe")(
-  "sk_test_51MtoxEBEUJeTlFCNxJ76sdyh6NWq9VNAJcb3CMpzTbPqG1868gKebwgveo8slpX0knFZNJRtgcxoDv3HQOLTdHWf00KB1Li05f"
-);
+require("dotenv").config();
+const stripe = require("stripe")(process.env.REACT_APP_TEST);
 
 const app = express();
 app.use(cors());
