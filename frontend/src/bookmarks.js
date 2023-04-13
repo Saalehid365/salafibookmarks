@@ -5,7 +5,7 @@ import product4 from "../src/assets/product4.JPG";
 
 export const bookmarks = [
   {
-    id: 1,
+    id: "price_1MvTGvBEUJeTlFCNwT13id2n",
     Stripe: "price_1MuI3YBEUJeTlFCNM1lKalBf",
     Quote: "this knowledge is matter of deen",
     Author: "Ibn Sireen",
@@ -14,7 +14,7 @@ export const bookmarks = [
     image: product1,
   },
   {
-    id: 2,
+    id: "price_1MuI6aBEUJeTlFCNWkryFf4M",
     Quote: "if a statement of mine opposes...",
     Author: "Imaam maalik",
     Price: 1.99,
@@ -22,7 +22,7 @@ export const bookmarks = [
     image: product2,
   },
   {
-    id: 3,
+    id: "price_1MtrI2BEUJeTlFCNfO6kHEqX",
     Quote: "Guidance ",
     Author: "Ibn Mubarak",
     Price: 2.99,
@@ -46,7 +46,7 @@ export const bookmarks = [
     image: product4,
   },
   {
-    id: 5,
+    id: 11,
     Quote: "Guidance ",
     Author: "Ibn Mubarak",
     Price: 2.99,
@@ -94,3 +94,16 @@ export const bookmarks = [
     image: product3,
   },
 ];
+
+function getProductData(id) {
+  let productData = bookmarks.find((product) => product.id === id);
+
+  if (productData === undefined) {
+    console.log("Product data does not exist for ID: " + id);
+    return undefined;
+  }
+
+  return productData;
+}
+
+export { getProductData };

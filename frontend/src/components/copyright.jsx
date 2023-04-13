@@ -5,7 +5,7 @@ import { FaCamera, FaFacebook, FaTwitch } from "react-icons/fa";
 
 const Copyright = () => {
   return (
-    <div className="flex justify-between text-xs bg-gray-100 h-full items-center border-t-2">
+    <div className="mt-auto flex justify-between text-xs bg-gray-100 h-full items-center border-t-2">
       <div className="flex items-center pl-12">
         <FaCamera className="text-lg mx-2" />
         <FaTwitch className="text-lg mx-2" />

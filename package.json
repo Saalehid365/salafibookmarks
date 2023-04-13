@@ -1,5 +1,5 @@
 {
-  "name": "store",
+  "name": "salafibookmarks",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,9 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saalehid365/salafibookmarks.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saalehid365/salafibookmarks/issues"
+  },
+  "homepage": "https://github.com/Saalehid365/salafibookmarks#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",

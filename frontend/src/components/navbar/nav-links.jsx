@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navlinks = () => {
   return (
-    <div className="flex justify-between w-1/3 h-full items-center">
+    <div className="flex justify-between w-1/3 h-full items-center font-serif font-bold">
       <Link
         to="/"
         className="hover:border-b-2 border-yellow-500 h-full flex items-center w-1/5 justify-center"

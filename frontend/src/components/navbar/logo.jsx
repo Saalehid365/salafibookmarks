@@ -6,8 +6,9 @@ const Logo = () => {
       className=" text-2xl
     "
     >
-      <p>
-        Salafi<span className="font-bold text-yellow-600">Bookmarks</span>
+      <p className="font-serif">
+        Salafi
+        <span className="font-bold font-serif text-yellow-600">Bookmarks</span>
       </p>
     </div>
   );

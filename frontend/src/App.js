@@ -14,9 +14,9 @@ import Cancel from "./pages/cancel";
 
 function App() {
   return (
-    <div className="App  flex flex-col ">
+    <div className="App  flex flex-col min-h-screen ">
       <ShopContextProvider>
-        <Router>
+        <Router className="flex flex-col">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

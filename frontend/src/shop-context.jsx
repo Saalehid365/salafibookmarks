@@ -1,55 +1,97 @@
 import React, { createContext, useState } from "react";
-import { bookmarks } from "./bookmarks";
+import { getProductData } from "./bookmarks";
 
-export const ShopContext = createContext(null);
-
-const getDefaultCart = () => {
-  let cart = {};
-  for (let i = 1; i < bookmarks.length + 1; i++) {
-    cart[i] = 0;
-  }
-  return cart;
-};
+export const ShopContext = createContext({
+  items: [],
+  getProductQuantity: () => {},
+  addOneToCart: () => {},
+  removeOneFromCart: () => {},
+  deleteFromCart: () => {},
+  getTotalCost: () => {},
+});
 
 export const ShopContextProvider = (props) => {
-  const [cartItems, setCartItems] = useState(getDefaultCart());
+  const [cartItems, setCartItems] = useState([]);
 
-  const addToCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-  };
+  function getProductQuantity(id) {
+    const quantity = cartItems.find((product) => product.id === id)?.quantity;
 
-  const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
-  };
-
-  const updateCartAmount = (newAmount, itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: newAmount }));
-  };
-
-  const getTotal = () => {
-    let totalCost = 0;
-    for (const item in cartItems) {
-      if (cartItems[item] > 0) {
-        let itemInfo = bookmarks.find((product) => product.id === Number(item));
-        totalCost += cartItems[item] * itemInfo.Price;
-      }
+    if (quantity === undefined) {
+      return 0;
     }
+    return quantity;
+  }
 
+  function addOneToCart(id) {
+    const quantity = getProductQuantity(id);
+
+    if (quantity === 0) {
+      // not in cart
+      setCartItems([
+        ...cartItems,
+        {
+          id: id,
+          quantity: 1,
+        },
+      ]);
+    } else {
+      // in cart
+      // [ { id: 1, quantity: 3 } ]
+      setCartItems(
+        cartItems.map((product) =>
+          product.id === id
+            ? {
+                ...product,
+                quantity: product.quantity + 1,
+              }
+            : product
+        )
+      );
+    }
+  }
+  function removeOneFromCart(id) {
+    const quantity = getProductQuantity(id);
+    if (quantity === 1) {
+      deleteFromCart(id);
+    } else {
+      setCartItems(
+        cartItems.map((product) =>
+          product.id === id
+            ? {
+                ...product,
+                quantity: product.quantity - 1,
+              }
+            : product
+        )
+      );
+    }
+  }
+  function deleteFromCart(id) {
+    setCartItems((cartItems) =>
+      cartItems.filter((currentItems) => {
+        return currentItems.id !== id;
+      })
+    );
+  }
+
+  function getTotalCost() {
+    let totalCost = 0;
+    cartItems.map((cartItem) => {
+      const productData = getProductData(cartItem.id);
+      totalCost += productData.Price * cartItem.quantity;
+    });
     return totalCost;
-  };
-
-  const totalAmount = getTotal();
-  const completeAmount = Number(totalAmount.toFixed(2));
+  }
 
   const contextValue = {
-    cartItems,
-    removeFromCart,
-    addToCart,
-    updateCartAmount,
-    getTotal,
-    completeAmount,
+    items: cartItems,
+    addOneToCart,
+    deleteFromCart,
+    getTotalCost,
+    removeOneFromCart,
+    getProductQuantity,
   };
-  console.log(cartItems);
+
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

@@ -3,14 +3,18 @@ import Baskettotals from "../cart/baskettotals";
 import Carttable from "../cart/carttable";
 import Remaining from "../cart/remaing";
 import Searchbar from "../cart/searchbar";
+import Carttitle from "../cart/carttitle";
 
 const Cartpage = () => {
   return (
-    <div className="flex flex-col items-center pt-24">
+    <div className="flex flex-col items-center justify-between ">
+      <Carttitle />
       <Searchbar />
       <Remaining />
-      <Carttable />
-      <Baskettotals />
+      <div className="flex justify-evenly w-full">
+        <Carttable />
+        <Baskettotals />
+      </div>
     </div>
   );
 };
