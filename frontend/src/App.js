@@ -7,10 +7,8 @@ import Store from "./pages/store";
 import Copyright from "./components/copyright";
 import Cartpage from "./pages/cart";
 import { ShopContextProvider } from "./shop-context";
-import "@stripe/stripe-js";
 import Success from "./pages/success";
 import Cancel from "./pages/cancel";
-import Productpage from "./pages/product";
 import Contact from "./pages/contact";
 
 function App() {
@@ -21,10 +19,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="store" element={<Store />}>
-              <Route exact path="/store/:id" element={Productpage} />
-            </Route>
-
+            <Route path="store" element={<Store />} />
             <Route path="shoppingcart" element={<Cartpage />} />
             <Route path="success" element={<Success />} />
             <Route path="cancel" element={<Cancel />} />
