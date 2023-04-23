@@ -12,6 +12,7 @@ export const ShopContext = createContext({
 
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState([]);
+  const [filter, setFilter] = useState("");
 
   function getProductQuantity(id) {
     const quantity = cartItems.find((product) => product.id === id)?.quantity;
@@ -90,6 +91,8 @@ export const ShopContextProvider = (props) => {
     getTotalCost,
     removeOneFromCart,
     getProductQuantity,
+    filter,
+    setFilter,
   };
 
   return (

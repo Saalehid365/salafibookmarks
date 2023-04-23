@@ -1,15 +1,18 @@
 import React from "react";
-
+import logo from "../navbar/logo.jpg";
 const Logo = () => {
   return (
     <div
-      className=" text-2xl
+      className=" flex items-center justify-between w-40
     "
     >
-      <p className="font-serif">
-        Salafi
-        <span className="font-bold font-serif text-yellow-600">Bookmarks</span>
-      </p>
+      <img src={logo} className="h-14 w-8 rounded-md"></img>
+      <div className="text-1xl font-bold flex flex-col items-start justify-center ml-2">
+        <p className="font-mono text-gray-300">
+          <span className="">S</span>alafi
+        </p>
+        <p className="font-mono text-gray-300">Bookmarks</p>
+      </div>
     </div>
   );
 };

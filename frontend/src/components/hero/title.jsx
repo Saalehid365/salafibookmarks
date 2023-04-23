@@ -1,16 +1,15 @@
-import { Timeline } from "gsap/gsap-core";
-import React, { useRef, useEffect } from "react";
-import TitleText from "./titleText";
+import React from "react";
 
 const Title = ({ timeline, ease }) => {
-  const welcome = useRef(null);
-  const salafiBook = useRef(null);
-
   return (
-    <div className=" text-start pb-44 pt-32 absolute text-white">
+    <div className=" text-start pb-44 pt-32  text-white">
       <p className="text-4xl">Welcome To </p>
       <p className="text-8xl font-bold">Salafi Bookmarks</p>
-      <TitleText />
+      <div className=" text-2xl text-white">
+        <p>No more folding pages</p>
+        <p>Bookmark your page with a quality bookmark</p>
+        <button className="border w-44 mt-8 rounded-lg h-12">Shop now</button>
+      </div>
     </div>
   );
 };

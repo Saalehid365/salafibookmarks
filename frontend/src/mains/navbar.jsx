@@ -5,7 +5,7 @@ import Searchbasket from "../components/navbar/searchbasket";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-evenly items-center px-24 w-full h-20 border-b-2">
+    <div className="flex justify-evenly items-center px-24 w-full h-16 border-b-2 border-gray-500 bg-black">
       <Logo />
       <Navlinks />
       <Searchbasket />
