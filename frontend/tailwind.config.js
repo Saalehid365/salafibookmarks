@@ -11,7 +11,7 @@ module.exports = {
         image1: "url('/src/assets/inkpot.jpeg')",
         image2: "url('/src/assets/book12.avif')",
         mainbg: "url('/src/assets/bookimg.jpeg')",
-        contactus: "url('/src/assets/cuss.avif')",
+        contactus: "url('/src/assets/cusss.avif')",
       },
     },
   },

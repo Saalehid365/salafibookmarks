@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { bookmarks } from "../bookmarks";
 import { ShopContext } from "../shop-context";
 import Cartitem from "./cartitem";
 

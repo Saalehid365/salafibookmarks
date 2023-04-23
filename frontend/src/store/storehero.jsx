@@ -1,5 +1,4 @@
 import React from "react";
-import { FaArrowsAltV } from "react-icons/fa";
 
 const Storehero = () => {
   return (

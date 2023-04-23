@@ -5,7 +5,6 @@ import { ShopContext } from "../shop-context";
 const Baskettotals = () => {
   const cart = useContext(ShopContext);
   const [shipping, setShipping] = useState(0);
-  const shippingCost = shipping;
 
   return (
     <div className="border mt-12 w-2/6 h-full flex flex-col items-start justify-evenly text-gray-600 mb-6">

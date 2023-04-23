@@ -80,8 +80,8 @@ export const ShopContextProvider = (props) => {
     cartItems.map((cartItem) => {
       const productData = getProductData(cartItem.id);
       totalCost += productData.Price * cartItem.quantity;
+      return totalCost;
     });
-    return totalCost;
   }
 
   const contextValue = {

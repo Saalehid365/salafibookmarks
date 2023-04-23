@@ -1,8 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useRef } from "react";
+import React from "react";
 import Navbar from "./mains/navbar";
-import Footer from "./mains/footer";
 import Home from "./pages/home";
 import Store from "./pages/store";
 import Copyright from "./components/copyright";

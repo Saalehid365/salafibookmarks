@@ -4,7 +4,6 @@ import { getProductData } from "../bookmarks";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 const Cartitem = (props) => {
-  const currentProduct = props.currentProduct;
   const cart = useContext(ShopContext);
   const id = props.id;
   const quantity = props.quantity;
