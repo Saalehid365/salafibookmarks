@@ -8,7 +8,7 @@ const Topsellercard = (props) => {
 
   return (
     <div>
-      <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform ">
+      <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform sm:w-60 sm:h-42">
         <div class="h-full w-full bg-gray-100 flex flex-col justify-between p-2 bg-cover bg-center">
           <img src={product.image} alt="productImg" className="h-60 "></img>
           <div>

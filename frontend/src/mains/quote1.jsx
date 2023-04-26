@@ -2,7 +2,7 @@ import React from "react";
 
 const Quote1 = () => {
   return (
-    <div className="h-40  w-4/6 flex flex-col items-end justify-evenly ml-96 mb-24 font-thin bg-gray-100 p-4">
+    <div className="h-40  w-4/6 flex flex-col items-end justify-evenly ml-96 mb-24 font-thin bg-gray-100 p-4 sm:hidden">
       <p className="text-3xl w-2/3 text-gray-600 text-start">
         One doesn&#39; t become noble with any type of knowledge if he
         doesn&#39; t beautify his knowledge with good conduct.
