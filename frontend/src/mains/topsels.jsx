@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Topsels = () => {
   return (
     <div className=" h-full flex flex-col justify-evenly">
-      <h2 className="text-5xl mb-24 ">Top Sellers</h2>
+      <h2 className="text-5xl mb-24 sm:text-3xl sm:pt-6">Top Sellers</h2>
       <Topgrid />
       <div className=" mt-12 ">
         <Link
