@@ -2,7 +2,6 @@ const express = require("express");
 var cors = require("cors");
 require("dotenv").config();
 const stripe = require("stripe")(process.env.REACT_APP_TEST);
-const PORT = process.env.PORT || 10000;
 
 const app = express();
 app.use(cors());
@@ -58,4 +57,4 @@ app.post("/checkout", async (req, res) => {
   );
 });
 
-app.listen(PORT, () => console.log("Listening on port 4000!"));
+app.listen(4000, () => console.log("Listening on port 4000!"));
