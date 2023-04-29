@@ -25,7 +25,7 @@ const Checkout = () => {
   return (
     <button
       onClick={checkout}
-      className="bg-black w-2/3 text-white h-12 text-sm uppercase sm:w-full"
+      className="bg-black w-2/3 text-white h-12 text-sm uppercase sm:w-96"
     >
       Proceed to checkout
     </button>
