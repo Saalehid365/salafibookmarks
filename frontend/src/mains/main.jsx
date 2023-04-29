@@ -2,7 +2,7 @@ import React from "react";
 
 const MainHero = () => {
   return (
-    <div className="bg-mainbg h-[50vh] bg-center flex flex-col items-center justify-center bg-cover bg-no-repeat sm:w-screen sm:pb-6">
+    <div className="bg-mainbg h-[50vh] bg-center flex flex-col items-center justify-center bg-cover bg-no-repeat sm:w-screen sm:pb-6 sm:pt-12">
       <div className="text-white font-serif">
         <h3 className="text-start text-2xl sm:hidden">Welcome to</h3>
         <h2 className="text-8xl sm:text-6xl sm:pt-24">Salafi Bookmarks</h2>
