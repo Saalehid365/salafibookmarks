@@ -8,7 +8,7 @@ const Topsellercard = (props) => {
 
   return (
     <div>
-      <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform sm:w-60 sm:h-42">
+      <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform sm:w-40 sm:h-42">
         <div class="h-full w-full bg-gray-100 flex flex-col justify-between p-2 bg-cover bg-center">
           <img src={product.image} alt="productImg" className="h-60 "></img>
           <div>
@@ -69,7 +69,7 @@ const Topsellercard = (props) => {
             </button>
           </div>
           <button
-            class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center"
+            class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center sm:w-32 sm:h-10 sm:text-xs"
             onClick={() => cart.addOneToCart(product.id)}
           >
             Add to cart
