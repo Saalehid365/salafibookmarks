@@ -5,9 +5,7 @@ const MainHero = () => {
     <div className="bg-mainbg h-[50vh] bg-center flex flex-col items-center justify-center bg-cover bg-no-repeat sm:w-screen">
       <div className="text-white font-serif">
         <h3 className="text-start text-2xl sm:hidden">Welcome to</h3>
-        <h2 className="text-8xl sm:text-6xl">
-          Salafi <br></br>Bookmarks
-        </h2>
+        <h2 className="text-8xl sm:text-6xl sm:pt-12">Salafi Bookmarks</h2>
       </div>
       <div className="text-white mt-24 text-xl font-serif border w-96 h-12 flex items-center justify-center rounded-md sm:w-60 sm:h-24">
         <h4>No more folding your pages</h4>

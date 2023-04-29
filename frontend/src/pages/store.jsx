@@ -5,11 +5,14 @@ import Storehero from "../store/storehero";
 
 const Store = () => {
   return (
-    <div>
+    <div
+      className="sm:pt-24
+    "
+    >
       <div>
         <Storehero />
       </div>
-      <div className="flex">
+      <div className="flex sm:flex-col">
         <Filtermenu />
         <Storegrid />
       </div>

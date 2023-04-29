@@ -13,6 +13,7 @@ export const ShopContext = createContext({
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState([]);
   const [filter, setFilter] = useState("");
+  const [toggleHam, setToggleHam] = useState(false);
 
   function getProductQuantity(id) {
     const quantity = cartItems.find((product) => product.id === id)?.quantity;
@@ -83,6 +84,9 @@ export const ShopContextProvider = (props) => {
       return totalCost;
     });
   }
+  const toggleModal1 = () => {
+    setToggleHam(!toggleHam);
+  };
 
   const contextValue = {
     items: cartItems,
@@ -93,6 +97,9 @@ export const ShopContextProvider = (props) => {
     getProductQuantity,
     filter,
     setFilter,
+    setToggleHam,
+    toggleHam,
+    toggleModal1,
   };
 
   return (
