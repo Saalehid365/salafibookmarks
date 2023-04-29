@@ -7,11 +7,11 @@ import Carttitle from "../cart/carttitle";
 
 const Cartpage = () => {
   return (
-    <div className="flex flex-col items-center justify-between ">
+    <div className="flex flex-col items-center justify-between sm:pt-24   ">
       <Carttitle />
       <Searchbar />
       <Remaining />
-      <div className="flex justify-evenly w-full">
+      <div className="flex justify-evenly w-full sm:flex-col">
         <Carttable />
         <Baskettotals />
       </div>

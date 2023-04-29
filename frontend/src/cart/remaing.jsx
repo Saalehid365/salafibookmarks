@@ -8,7 +8,7 @@ const Remaining = () => {
   const remaining = balance - completeAmount;
 
   return (
-    <div className="border flex justify-between w-4/5 mt-10 h-12 ">
+    <div className="border flex justify-between w-4/5 mt-10 h-12 sm:hidden">
       <div className="flex items-center">
         <FaInfo className="text-blue-500 pl-2" />
         {remaining > 0 ? (

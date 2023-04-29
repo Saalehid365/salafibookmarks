@@ -9,7 +9,7 @@ const Store = () => {
       className="sm:pt-24
     "
     >
-      <div>
+      <div className="">
         <Storehero />
       </div>
       <div className="flex sm:flex-col">

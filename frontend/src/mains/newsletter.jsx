@@ -8,7 +8,7 @@ const Newsletter = () => {
         <div>
           <FaEnvelope className="w-44 h-44 text-yellow-100 sm:h-28 sm:w-28" />
         </div>
-        <div className="h-44 flex flex-col justify-evenly text-yellow-100">
+        <div className="h-44 flex flex-col justify-evenly text-yellow-100 sm:px-4">
           <p className="text-2xl">Newsletter</p>
           <p className="text-3xl sm:text-2xl">
             Sign up to our newsletter for the latest news and offers

@@ -9,13 +9,13 @@ const Baskettotals = () => {
   console.log(balance);
 
   return (
-    <div className="border mt-12 w-2/6 h-full flex flex-col items-start justify-evenly text-gray-600 mb-6">
-      <p className="h-24 pl-6 text-4xl pt-6">Basket totals</p>
-      <div className="flex h-20 pt-6">
+    <div className="border mt-12 w-2/6 h-full flex flex-col items-start justify-evenly text-gray-600 mb-6 sm:border-0 sm:w-full">
+      <p className="h-24 pl-6 text-4xl pt-6 sm:hidden">Basket totals</p>
+      <div className="flex h-20 pt-6 sm:border-t-2 sm:border-b-2 sm:w-96">
         <h2 className="w-28 font-semibold">Subtotal</h2>
-        <h3 className="w-40 text-gray-800 font-semibold"></h3>
+        <h2 className="hidden sm:inline">£1234</h2>
       </div>
-      <div className="flex h-40 pt-6">
+      <div className="flex h-40 pt-6 sm:hidden">
         <h2 className="w-28 font-semibold">Delivery</h2>
         <div className="flex flex-col items-start">
           <div className="pl-12 mb-6">
@@ -44,13 +44,13 @@ const Baskettotals = () => {
           </div>
         </div>
       </div>
-      <div className="flex h-12">
+      <div className="flex h-12 sm:hidden">
         <h2 className="w-28 font-semibold">Total</h2>
         <h3 className="w-40 text-gray-800 font-semibold">
           {shipping + cart.getTotalCost()}
         </h3>
       </div>
-      <div className="flex w-full items-center justify-center h-24 ">
+      <div className="flex w-full items-center justify-center h-24 sm:w-full">
         <Checkout />
       </div>
     </div>
