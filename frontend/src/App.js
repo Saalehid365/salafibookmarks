@@ -10,12 +10,14 @@ import { ShopContextProvider } from "./shop-context";
 import Success from "./pages/success";
 import Cancel from "./pages/cancel";
 import Contact from "./pages/contact";
+import Banner from "./mains/banner";
 
 function App() {
   return (
     <div className="App  flex flex-col min-h-screen ">
       <ShopContextProvider>
         <Router className="flex flex-col">
+          <Banner />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

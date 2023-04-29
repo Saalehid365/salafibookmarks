@@ -8,7 +8,7 @@ const Hamburger = () => {
 
   return (
     <div className="hidden sm:inline ">
-      <FaBars className="text-gray-300 text-2xl" onClick={toggleModal1} />
+      <FaBars className="text-gray-900 text-2xl" onClick={toggleModal1} />
     </div>
   );
 };

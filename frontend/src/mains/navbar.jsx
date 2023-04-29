@@ -6,7 +6,7 @@ import Hamburger from "../components/navbar/hamburger";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-evenly items-center px-24 w-full  border-b-2 border-gray-500 bg-black sm:flex sm:h-24 sm:px-6 sm:w-screen sm:justify-between sm:fixed sm:z-10">
+    <div className="flex justify-evenly items-center px-24 w-full  border-b-2 border-gray-500 bg-heavyMetal sm:flex sm:h-24 sm:px-6 sm:w-screen sm:justify-between  sm:z-10">
       <Hamburger />
       <Logo />
       <Navlinks />

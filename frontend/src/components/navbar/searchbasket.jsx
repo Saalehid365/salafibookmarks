@@ -14,7 +14,7 @@ const Searchbasket = () => {
 
   return (
     <div className="flex w-12 justify-evenly text-2xl text-gray-600">
-      <Link to="shoppingcart" className="flex items-center text-gray-300">
+      <Link to="shoppingcart" className="flex items-center text-gray-900">
         <FaCartPlus />
         <div className="flex flex-col text-sm w-24 font-mono ml-2 sm:hidden">
           <p>My Cart</p>
