@@ -13,13 +13,14 @@ module.exports = {
         mainbg: "url('/src/assets/mainbg.jpeg')",
         contactus: "url('/src/assets/cusss.avif')",
       },
+      colors: {
+        greenSpring: "#AAB7A5",
+        heavyMetal: "#293C2E",
+        finlandia: "#556458",
+        axolotl: "#54644C",
+      },
     },
-    colors: {
-      greenSpring: "#AAB7A5",
-      heavyMetal: "#293C2E",
-      finlandia: "#556458",
-      axolotl: "#54644C",
-    },
+
     screens: {
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }

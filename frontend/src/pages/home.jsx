@@ -8,6 +8,8 @@ import Topsels from "../mains/topsels";
 import Quote1 from "../mains/quote1";
 import Dropdown from "../mains/dropdown";
 import { ShopContext } from "../shop-context";
+import Services from "../mains/services";
+import Slider from "../mains/slider";
 
 const Home = () => {
   const toggleHamburger = useContext(ShopContext);
@@ -17,6 +19,8 @@ const Home = () => {
     <div>
       {toggleHam && <Dropdown />}
       <MainHero />
+      <Services />
+      <Slider />
       <Quote />
       <Quote1 />
       <Topsels />
