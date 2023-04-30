@@ -10,6 +10,7 @@ import { ShopContext } from "../shop-context";
 import Services from "../mains/services";
 import Slider from "../mains/slider";
 import Sliderfeedback from "../mains/feedback.jsx";
+import Secondhero from "../mains/secondhero";
 
 const Home = () => {
   const toggleHamburger = useContext(ShopContext);
@@ -21,6 +22,7 @@ const Home = () => {
       <MainHero />
       <Services />
       <Slider />
+      <Secondhero />
       <Sliderfeedback />
       <Quote />
       <Quote1 />

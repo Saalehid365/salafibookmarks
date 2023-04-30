@@ -6,7 +6,7 @@ import Storehero from "../store/storehero";
 const Store = () => {
   return (
     <div
-      className="sm:pt-24
+      className="sm:pt-
     "
     >
       <div className="">

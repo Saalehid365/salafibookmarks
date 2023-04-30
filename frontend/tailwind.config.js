@@ -12,6 +12,7 @@ module.exports = {
         image2: "url('/src/assets/book12.avif')",
         mainbg: "url('/src/assets/mainbg.jpeg')",
         contactus: "url('/src/assets/cusss.avif')",
+        hero: "url('/src/assets/hero3.png')",
       },
       colors: {
         greenSpring: "#AAB7A5",

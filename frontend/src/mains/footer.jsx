@@ -11,7 +11,7 @@ const Footer = () => {
           <h3 className="text-sm">4 Bonham Grove</h3>
           <h3 className="text-sm">Birmingham, B25 8RX</h3>
         </div>
-        <h2 className="font-bold">info@salafibookmarks.com</h2>
+        <h2 className="font-bold underline">info@salafibookmarks.com</h2>
       </div>
       <div className="text-start h-40 flex flex-col justify-between">
         <div>

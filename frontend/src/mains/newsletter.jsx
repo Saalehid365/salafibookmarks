@@ -13,10 +13,15 @@ const Newsletter = () => {
           <p className="text-3xl sm:text-2xl">
             Sign up to our newsletter for the latest news and offers
           </p>
-          <input
-            className="h-12 rounded w-72 sm:h-12 my-6 pl-6"
-            placeholder="Email Address"
-          ></input>
+          <div className="flex justify-center items-center w-full">
+            <input
+              className="h-12 rounded w-60 sm:h-12 my-6 pl-6 mr-2"
+              placeholder="Email Address"
+            ></input>
+            <button className="uppercase border border-greenSpring h-12 w-24 rounded text-greenSpring">
+              Sign up
+            </button>
+          </div>
           <p>
             we won't flood your inbox, and you might receive some discount
             vouchers

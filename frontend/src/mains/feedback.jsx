@@ -18,7 +18,7 @@ const Sliderfeedback = () => {
       >
         {feedbackCustomers.map((feed) => (
           <SwiperSlide className="bg-greenSpring flex flex-col items-center justify-center h-full pt-12">
-            <p className="mt-10 px-12 text-md w-72 mx-auto">{feed.feedinfo}</p>
+            <p className="mt-10 px-12 text-md w-96 mx-auto">{feed.feedinfo}</p>
             <h2 className="pb-6 mt-6">{feed.name}</h2>
           </SwiperSlide>
         ))}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Googlemap = () => {
   return (
-    <div className="flex justify-center pt-24 sm:pt-0">
+    <div className="flex justify-center pt-24  sm:p-4">
       <iframe
         width="1366"
         height="474"
