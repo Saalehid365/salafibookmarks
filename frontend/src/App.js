@@ -4,7 +4,6 @@ import React from "react";
 import Navbar from "./mains/navbar";
 import Home from "./pages/home";
 import Store from "./pages/store";
-import Copyright from "./components/copyright";
 import Cartpage from "./pages/cart";
 import { ShopContextProvider } from "./shop-context";
 import Success from "./pages/success";
@@ -27,7 +26,6 @@ function App() {
             <Route path="cancel" element={<Cancel />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
-          <Copyright />
         </Router>
       </ShopContextProvider>
     </div>
