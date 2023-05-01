@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-axolotl sm:h-[60vh] p-4 flex sm:flex-col sm:justify-evenly text-greenSpring mt-12 justify-between h-72 sm:mt-0">
-      <div className="sm:h-40 flex flex-col sm:justify-between text-start w-96 justify-evenly">
+    <div className="bg-axolotl sm:h-full sm:pb-12 p-4 flex sm:flex-col sm:justify-evenly text-greenSpring mt-12 justify-between h-72 sm:mt-0">
+      <div className="sm:h-40 flex flex-col sm:justify-between text-start  justify-evenly">
         <h2 className="sm:text-xl sm:w-60 sm:text-start text-3xl ">
           Providing bookmarks your proud to share
         </h2>

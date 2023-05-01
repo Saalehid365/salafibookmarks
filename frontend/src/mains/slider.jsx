@@ -39,22 +39,22 @@ const Slider = () => {
       }}
     >
       <SwiperSlide className=" ">
-        <img src={slide1} className="sm:h-40 sm:w-72"></img>
+        <img src={slide1} className=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide2} className="sm:h-40 sm:w-40"></img>
+        <img src={slide2} className=""></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide3} className="sm:h-40 sm:w-40"></img>
+        <img src={slide3} className=" "></img>
       </SwiperSlide>
       <SwiperSlide className="">
-        <img src={slide1} className="sm:h-40 sm:w-40"></img>
+        <img src={slide1} className=" "></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide2} className="sm:h-40 sm:w-40"></img>
+        <img src={slide2} className=" "></img>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide3} className="sm:h-40 sm:w-40"></img>
+        <img src={slide3} className=" "></img>
       </SwiperSlide>
       <div className="flex justify-between absolute top-52   z-20 w-full sm:top-0 sm:relative sm:justify-evenly">
         <div>
