@@ -8,7 +8,7 @@ const Newsletter = () => {
         <div>
           <FaEnvelope className="w-32 h-32 text-yellow-100 sm:h-28 sm:w-28" />
         </div>
-        <div className=" flex flex-col items-center justify-evenly text-heavyMetal sm:px-4">
+        <div className=" flex flex-col items-center justify-evenly text-greenSpring sm:px-4">
           <p className="text-2xl">Newsletter</p>
           <p className="text-3xl sm:text-2xl">
             Sign up to our newsletter for the latest news and offers

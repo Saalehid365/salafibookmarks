@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-axolotl sm:h-96 p-4 flex flex-col justify-evenly text-greenSpring">
-      <div className="h-40 flex flex-col justify-between text-start">
-        <h2 className="text-xl w-60 text-start">
+    <div className="bg-axolotl sm:h-96 p-4 flex sm:flex-col sm:justify-evenly text-greenSpring mt-12 justify-between h-72">
+      <div className="sm:h-40 flex flex-col sm:justify-between text-start w-96 justify-evenly">
+        <h2 className="sm:text-xl sm:w-60 sm:text-start text-3xl ">
           Providing bookmarks your proud to share
         </h2>
         <div>
@@ -13,14 +13,14 @@ const Footer = () => {
         </div>
         <h2 className="font-bold underline">info@salafibookmarks.com</h2>
       </div>
-      <div className="text-start h-40 flex flex-col justify-between">
-        <div>
-          <h2 className="text-xl font-bold">Hours/Days</h2>
+      <div className="sm:text-start sm:h-40 flex sm:flex-col sm:justify-between w-2/3 justify-evenly pt-12">
+        <div className="flex flex-col justify-evenly h-40">
+          <h2 className="text-xl font-bold underline">Hours/Days</h2>
           <h3 className="text-sm">Monday - Saturday </h3>
           <h3 className="text-sm">8am -7pm</h3>
         </div>
-        <div>
-          <h2 className="text-xl font-bold">Follow</h2>
+        <div className="flex flex-col justify-evenly h-40">
+          <h2 className="text-xl font-bold underline">Follow</h2>
           <h3 className="text-sm">Instagram</h3>
           <h3 className="text-sm">Twitter</h3>
         </div>
