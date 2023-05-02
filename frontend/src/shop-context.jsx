@@ -88,6 +88,12 @@ export const ShopContextProvider = (props) => {
     setToggleHam(!toggleHam);
   };
 
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   const contextValue = {
     items: cartItems,
     addOneToCart,
@@ -100,6 +106,9 @@ export const ShopContextProvider = (props) => {
     setToggleHam,
     toggleHam,
     toggleModal1,
+    setToggle,
+    toggle,
+    handleToggle,
   };
 
   return (

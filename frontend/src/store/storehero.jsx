@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSlidersH } from "react-icons/fa";
 
 const Storehero = () => {
   return (
