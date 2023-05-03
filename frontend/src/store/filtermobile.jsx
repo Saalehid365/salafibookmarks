@@ -6,9 +6,14 @@ const Filtermobile = () => {
   const { filter, setFilter, setToggle, toggle, handleToggle } = filterSearch;
 
   return (
-    <div className=" flex flex-col items-start pl-6 pt-6 h-96 justify-evenly ">
-      <h2>Filter</h2>
-      <p>{filter}</p>
+    <div className=" flex flex-col items-start pl-6 pt-6 h-96 justify-evenly shadow">
+      <div className="w-full relative -top-10 mt-5 left-28">
+        <p className="text-2xl hover:cursor-pointer" onClick={handleToggle}>
+          X
+        </p>
+      </div>
+      <h2 className="font-bold">Filter by Color</h2>
+
       <select
         className="w-60 h-10 border px-2 bg-gray-100"
         onChange={(e) => setFilter(e.target.value)}
@@ -22,11 +27,13 @@ const Filtermobile = () => {
         <option value="navy">Navy</option>
         <option value="black">Black</option>
       </select>
+      <h2 className="font-bold">Filter by Language</h2>
       <select className="w-60 h-10 border px-2 bg-gray-100">
         <option>Language</option>
         <option>English</option>
         <option>Arabic</option>
       </select>
+      <h2 className="font-bold">Filter by Author</h2>
       <select className="w-60 h-10 border px-2 bg-gray-100">
         <option>Author</option>
         <option>Ibn Qayyim</option>
@@ -34,11 +41,11 @@ const Filtermobile = () => {
         <option>Ibn Taymiyyah</option>
         <option>Al- Hasan al-Basri</option>
       </select>
-      <select className="w-60 h-10 border px-2 bg-gray-100">
-        <option>In Stock</option>
-      </select>
 
-      <button onClick={handleToggle}> Apply filter</button>
+      <button className="h-10 w-24 bg-gray-500" onClick={handleToggle}>
+        {" "}
+        Apply{" "}
+      </button>
     </div>
   );
 };

@@ -21,11 +21,11 @@ const Store = () => {
         <Filtermenu />
         <Transition
           show={!toggle}
-          enter="transition-opacity duration-500"
-          enterFrom="opacity-0"
-          enterTo="opacity-100"
-          leave="transition-opacity duration-500"
-          leaveFrom="opacity-100"
+          enter="transition transform duration-300 ease-out"
+          enterFrom="translate-x-12 opacity-0"
+          enterTo="translate-x-0 opacity-100"
+          leave="ransition transform duration-300 ease-in"
+          leaveFrom="translate-x-12 opacity-100"
           leaveTo="opacity-0"
         >
           <Storegrid />
