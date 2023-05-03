@@ -7,7 +7,7 @@ const Storegrid = () => {
   const filterSearch = useContext(ShopContext);
   const { filter } = filterSearch;
   return (
-    <div className=" w-full grid grid-rows-2 grid-cols-4 gap-4 px-6 py-12 sm:grid-cols-1 sm:gap-x-4 sm:px-4 sm:flex flex-col items-center">
+    <div className=" w-full grid grid-rows-2 grid-cols-4 gap-4 px-6 py-12 sm:grid-cols-2  sm:px-2   items-center">
       {bookmarks
         .filter((item) => {
           return filter.toLowerCase() === " "

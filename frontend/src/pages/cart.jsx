@@ -7,7 +7,7 @@ import Carttitle from "../cart/carttitle";
 
 const Cartpage = () => {
   return (
-    <div className="flex flex-col items-center justify-between sm:pt-24   ">
+    <div className="flex flex-col items-center justify-between    ">
       <Carttitle />
       <Searchbar />
       <Remaining />
