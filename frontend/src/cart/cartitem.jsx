@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../shop-context";
 import { getProductData } from "../bookmarks";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { FaAngleDown, FaAngleUp, FaTrashAlt } from "react-icons/fa";
 
 const Cartitem = (props) => {
   const cart = useContext(ShopContext);
@@ -14,20 +14,19 @@ const Cartitem = (props) => {
 
   return (
     <tr className="border h-8 sm:border-0 sm:flex sm:items-center sm:h-16">
-      <td className="flex items-center pl-2 sm:w-72 sm:justify-evenly">
-        <button
-          className=" border rounded-full h-8 w-8 sm:border-0"
+      <td className="w-full flex items-center justify-evenly pl-2 sm:w-72 sm:justify-between">
+        <FaTrashAlt
+          className=" text-heavyMetal h-4 w-4 sm:border-0 text-3xl"
           onClick={() => cart.deleteFromCart(props.id)}
-        >
-          x
-        </button>
+        />
+
         <img
           alt="button"
           src={productData.image}
-          className="h-28 w-28 pl-4 sm:pl-0 sm:h-16 sm:w-16 sm:pr-2"
+          className="h-12 w-12 sm:pl-0 sm:h-16 sm:w-16 sm:pr-2"
         ></img>
         <div className=" sm:flex sm:flex-col sm:items-start">
-          <p className=" sm:w-40 sm:text-ellipsis whitespace-nowrap overflow-hidden ">
+          <p className="w-40 sm:w-40 sm:text-ellipsis whitespace-nowrap overflow-hidden text-sm">
             {productData.Quote}
           </p>
           <p className="hidden sm:inline">£{productData.Price} each</p>

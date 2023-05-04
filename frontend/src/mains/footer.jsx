@@ -1,4 +1,5 @@
 import React from "react";
+import { FaInstagram, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,8 +22,19 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-evenly h-40 sm:flex sm:justify-start sm:h-32">
           <h2 className="text-xl font-bold underline">Follow</h2>
-          <h3 className="text-sm">Instagram</h3>
-          <h3 className="text-sm">Twitter</h3>
+
+          <div className="flex justify-evenly w-40 ">
+            <FaInstagram
+              href="https://www.instagram.com/salafibookmarks/?hl=en"
+              target="_blank"
+              className=" underline text-3xl cursor-pointer"
+            />
+            <FaTwitterSquare
+              href="https://twitter.com/salafibookmarks?lang=en-GB"
+              target="_blank"
+              className=" underline text-3xl cursor-pointer"
+            />
+          </div>
         </div>
       </div>
     </div>

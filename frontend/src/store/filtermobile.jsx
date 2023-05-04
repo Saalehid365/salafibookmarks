@@ -1,12 +1,12 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ShopContext } from "../shop-context";
 
 const Filtermobile = () => {
   const filterSearch = useContext(ShopContext);
-  const { filter, setFilter, setToggle, toggle, handleToggle } = filterSearch;
+  const { setFilter, handleToggle } = filterSearch;
 
   return (
-    <div className=" flex flex-col items-start pl-6 pt-6 h-96 justify-evenly shadow bg-slate-100">
+    <div className=" flex flex-col items-start pl-6 pt-6 h-screen pb-96 justify-evenly shadow bg-slate-100">
       <div className="w-full relative -top-10 mt-5 left-28">
         <p className="text-2xl hover:cursor-pointer" onClick={handleToggle}>
           X

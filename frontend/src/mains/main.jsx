@@ -13,9 +13,9 @@ const MainHero = () => {
         </h2>
       </div>
 
-      <div className="mt-4 sm:mt-24 border">
-        <Link to="store" className="border border-black h-10 p-2 ">
-          <button className="w-32">Shop now</button>
+      <div className="mt-4 sm:mt-24 border border-black rounded">
+        <Link to="store" className=" h-10 p-2 ">
+          <button className="w-32 text-heavyMetal">Shop now</button>
         </Link>
       </div>
     </div>

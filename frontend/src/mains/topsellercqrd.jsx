@@ -7,18 +7,17 @@ const Topsellercard = (props) => {
   const productQuantity = cart.getProductQuantity(product.id);
 
   return (
-    <div>
+    <div className="relative">
       <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform  sm:h-42  sm:hover:transform-none sm:hover:scale-0 sm:flex sm:flex-col sm:justify-center sm:items-center sm:m-0 sm:w-full">
         <div class="h-full w-full bg-gray-100 flex flex-col justify-between p-2 bg-cover bg-center sm:h-24 sm:w-24 sm:bg-none sm:flex-none sm:p-0">
           <img src={product.image} alt="productImg" className="h-60 "></img>
-          <div
-            className="sm:hidden
-          "
-          >
-            <span class="uppercase text-xs bg-green-50 p-0.5 border-green-500 border rounded text-green-700 font-medium select-none sm:hidden">
-              available
-            </span>
-          </div>
+          {productQuantity >= 1 && (
+            <div className="bg-gray-100 h-8 w-32 absolute bottom-56 left-24 flex items-center justify-center rounded">
+              <h3 className="text-xs  text-gray-600">
+                {productQuantity} added to cart
+              </h3>
+            </div>
+          )}
         </div>
 
         <div class="p-4 flex flex-col items-center sm:w-full ">
