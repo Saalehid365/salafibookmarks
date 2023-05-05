@@ -1,5 +1,4 @@
 import React from "react";
-import image1 from "../assets/hero3.png";
 import { Link } from "react-router-dom";
 
 const Secondhero = () => {
@@ -9,7 +8,10 @@ const Secondhero = () => {
         No need to use anything other than a salafi bookmarks to bring you back
         to your page
       </h3>
-      <Link className="border border-axolotl bg-axolotl text-white text-sm w-28 h-6 mt-8 rounded sm:h-10 sm:flex sm:items-center sm:justify-center">
+      <Link
+        to="about"
+        className="border border-axolotl bg-axolotl text-white text-sm w-28 h-8 flex items-center justify-center mt-8 rounded sm:h-10 sm:flex sm:items-center sm:justify-center"
+      >
         Shop now
       </Link>
     </div>

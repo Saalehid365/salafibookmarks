@@ -10,6 +10,7 @@ import Success from "./pages/success";
 import Cancel from "./pages/cancel";
 import Contact from "./pages/contact";
 import Banner from "./mains/banner";
+import About from "./pages/about";
 
 function App() {
   return (
@@ -22,8 +23,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="store" element={<Store />} />
             <Route path="shoppingcart" element={<Cartpage />} />
+
             <Route path="success" element={<Success />} />
             <Route path="cancel" element={<Cancel />} />
+            <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
         </Router>

@@ -19,9 +19,13 @@ const Searchbasket = () => {
         className="flex items-center text-greenSpring relative"
       >
         <FaCartPlus />
-        <div className="h-4 w-4 bg-red-600 text-xs rounded-xl flex items-center justify-center text-black absolute sm:bottom-3 bottom-4 left-5">
-          {productsCount}
-        </div>
+        {productsCount >= 1 ? (
+          <div className="h-4 w-4 bg-red-600 text-xs text-white rounded-xl flex items-center justify-center  absolute sm:bottom-3 bottom-4 left-5">
+            {productsCount}
+          </div>
+        ) : (
+          <></>
+        )}
         <div className="flex flex-col text-sm w-24 font-mono  sm:hidden">
           <p>My Cart</p>
         </div>

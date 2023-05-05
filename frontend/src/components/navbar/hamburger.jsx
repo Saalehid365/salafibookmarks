@@ -4,7 +4,8 @@ import { ShopContext } from "../../shop-context";
 
 const Hamburger = () => {
   const toggleHamburger = useContext(ShopContext);
-  const { toggleModal1 } = toggleHamburger;
+  const { toggleModal1, toggleHam } = toggleHamburger;
+  console.log(toggleHam);
 
   return (
     <div className="hidden sm:inline ">

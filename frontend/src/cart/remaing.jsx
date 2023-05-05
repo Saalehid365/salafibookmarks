@@ -11,9 +11,9 @@ const Remaining = () => {
     <div className="border flex justify-between w-4/5 mt-10 h-12 sm:hidden">
       <div className="flex items-center">
         <FaInfo className="text-blue-500 pl-2" />
-        {remaining > 0 ? (
+        {completeAmount > 0 ? (
           <h3 className="text-sm pl-4 font-bold">
-            you are only £ away from free delivery
+            you are only £{remaining} away from free delivery
           </h3>
         ) : (
           <h3 className=" text-sm pl-4 font-bold">

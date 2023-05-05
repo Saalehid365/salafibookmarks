@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <h2 className="font-bold underline">info@salafibookmarks.com</h2>
       </div>
-      <div className="sm:text-start sm:h-32 flex  sm:justify-between w-2/3 justify-evenly pt-12 sm:flex-row ">
+      <div className="sm:text-start sm:h-32 flex  sm:justify-between w-2/3 justify-evenly pt-12 sm:flex-col ">
         <div className="flex flex-col justify-evenly h-40 sm:flex sm:justify-start sm:h-32">
           <h2 className="text-xl font-bold underline">Hours/Days</h2>
           <h3 className="text-sm">Monday - Saturday </h3>
@@ -23,11 +23,11 @@ const Footer = () => {
         <div className="flex flex-col justify-evenly h-40 sm:flex sm:justify-start sm:h-32">
           <h2 className="text-xl font-bold underline">Follow</h2>
 
-          <div className="flex justify-evenly w-40 ">
+          <div className="flex justify-evenly w-40 sm:justify-start">
             <FaInstagram
               href="https://www.instagram.com/salafibookmarks/?hl=en"
               target="_blank"
-              className=" underline text-3xl cursor-pointer"
+              className=" underline text-3xl cursor-pointer mr-6"
             />
             <FaTwitterSquare
               href="https://twitter.com/salafibookmarks?lang=en-GB"

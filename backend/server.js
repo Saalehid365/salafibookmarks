@@ -29,7 +29,7 @@ app.post("/checkout", async (req, res) => {
         shipping_rate_data: {
           type: "fixed_amount",
           fixed_amount: { amount: 195, currency: "GBP" },
-          display_name: "Economy shipping",
+          display_name: "Standard shipping",
           delivery_estimate: {
             minimum: { unit: "business_day", value: 3 },
             maximum: { unit: "business_day", value: 5 },

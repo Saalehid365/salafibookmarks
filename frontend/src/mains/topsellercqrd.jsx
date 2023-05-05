@@ -74,7 +74,7 @@ const Topsellercard = (props) => {
             </button>
           </div>
           <button
-            class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-full flex items-center justify-center sm:w-32  sm:h-8 sm:text-xs"
+            class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600 active:bg-blue-700 disabled:opacity-50 mt-4 w-44 flex items-center justify-center sm:w-32  sm:h-8 sm:text-xs"
             onClick={() => cart.addOneToCart(product.id)}
           >
             Add to cart

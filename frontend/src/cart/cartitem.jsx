@@ -9,14 +9,13 @@ const Cartitem = (props) => {
   const quantity = props.quantity;
   const productData = getProductData(id);
   // const productQuantity = cart.getProductQuantity(product.id);
-
-  console.log(cart.items);
+  const total = quantity * productData.Price.toFixed(2);
 
   return (
     <tr className="border h-8 sm:border-0 sm:flex sm:items-center sm:h-16">
-      <td className="w-full flex items-center justify-evenly pl-2 sm:w-72 sm:justify-between">
+      <td className="w-full flex items-center justify-between pl-2 sm:w-72 sm:justify-between">
         <FaTrashAlt
-          className=" text-heavyMetal h-4 w-4 sm:border-0 text-3xl"
+          className=" text-heavyMetal h-4 w-4 sm:border-0 text-3xl hover:cursor-pointer "
           onClick={() => cart.deleteFromCart(props.id)}
         />
 
@@ -26,7 +25,7 @@ const Cartitem = (props) => {
           className="h-12 w-12 sm:pl-0 sm:h-16 sm:w-16 sm:pr-2"
         ></img>
         <div className=" sm:flex sm:flex-col sm:items-start">
-          <p className="w-40 sm:w-40 sm:text-ellipsis whitespace-nowrap overflow-hidden text-sm">
+          <p className="w-72 sm:w-40 sm:text-ellipsis whitespace-nowrap overflow-hidden text-sm">
             {productData.Quote}
           </p>
           <p className="hidden sm:inline">£{productData.Price} each</p>
@@ -53,7 +52,7 @@ const Cartitem = (props) => {
         </div>
       </td>
       <td className="w-20 sm:hidden">
-        <p>£{(quantity * productData.Price).toFixed(2)}</p>
+        <p>£{total}</p>
       </td>
     </tr>
   );

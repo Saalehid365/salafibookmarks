@@ -16,7 +16,10 @@ const Navlinks = () => {
       >
         Store
       </Link>
-      <Link className="hover:border-b-2 border-greenSpring h-full flex items-center w-1/5 justify-center">
+      <Link
+        to="about"
+        className="hover:border-b-2 border-greenSpring h-full flex items-center w-1/5 justify-center"
+      >
         About
       </Link>
       <Link

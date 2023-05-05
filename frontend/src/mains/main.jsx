@@ -13,11 +13,12 @@ const MainHero = () => {
         </h2>
       </div>
 
-      <div className="mt-4 sm:mt-24 border border-black rounded">
-        <Link to="store" className=" h-10 p-2 ">
-          <button className="w-32 text-heavyMetal">Shop now</button>
-        </Link>
-      </div>
+      <Link
+        to="store"
+        className=" h-8 w-28 p-2 bg-axolotl rounded flex justify-center mt-12 items-center text-white"
+      >
+        Shop now
+      </Link>
     </div>
   );
 };

@@ -9,7 +9,6 @@ import Dropdown from "../mains/dropdown";
 import { ShopContext } from "../shop-context";
 import Services from "../mains/services";
 import Slider from "../mains/slider";
-import Sliderfeedback from "../mains/feedback.jsx";
 import Secondhero from "../mains/secondhero";
 
 const Home = () => {
@@ -23,7 +22,6 @@ const Home = () => {
       <Services />
       <Slider />
       <Secondhero />
-      <Sliderfeedback />
       <Quote />
       <Quote1 />
       <Newsletter />
