@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <h2 className="font-bold underline">info@salafibookmarks.com</h2>
       </div>
-      <div className="sm:text-start sm:h-32 flex  sm:justify-between w-2/3 justify-evenly pt-12 sm:flex-col ">
+      <div className="sm:text-start sm:h-32 flex  sm:justify-between w-2/3 justify-evenly pt-12 sm:w-full ">
         <div className="flex flex-col justify-evenly h-40 sm:flex sm:justify-start sm:h-32">
           <h2 className="text-xl font-bold underline">Hours/Days</h2>
           <h3 className="text-sm">Monday - Saturday </h3>

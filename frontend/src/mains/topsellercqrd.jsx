@@ -12,7 +12,7 @@ const Topsellercard = (props) => {
         <div class="h-full w-full bg-gray-100 flex flex-col justify-between p-2 bg-cover bg-center sm:h-24 sm:w-24 sm:bg-none sm:flex-none sm:p-0">
           <img src={product.image} alt="productImg" className="h-60 "></img>
           {productQuantity >= 1 && (
-            <div className="bg-gray-100 h-8 w-32 absolute bottom-56 left-24 flex items-center justify-center rounded">
+            <div className="bg-gray-100 h-10 w-24  bottom-56 left-24 flex items-center justify-center rounded">
               <h3 className="text-xs  text-gray-600">
                 {productQuantity} added to cart
               </h3>

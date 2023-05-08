@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_9b1pp9e",
+        "template_p0y0fei",
+        form.current,
+        "EZ2Sf1n1gVEVVqjXy"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className=" h-screen bg-gray-200 flex pt-40">
       <div className="px-12 flex flex-col items-start w-2/5 justify-between h-2/5 mr-6 font-mono">
@@ -14,7 +38,7 @@ const Contact = () => {
           in'shaAllaah
         </p>
       </div>
-      <div className=" flex flex-col w-2/4 px-6">
+      <form ref={form} className=" flex flex-col w-2/4 px-6">
         <div className="flex flex-col items-start justify-between">
           <label className="font-medium">
             Name <span className="text-greenSpring ml-2">(required)</span>
@@ -22,11 +46,19 @@ const Contact = () => {
           <div className="flex w-full justify-between mt-2">
             <div className="flex flex-col items-start w-full pr-2 ">
               <label>first name</label>
-              <input type="name" className="h-12 w-full mt-1 rounded"></input>
+              <input
+                type="name"
+                name="firstName"
+                className="h-12 w-full mt-1 rounded pl-4"
+              ></input>
             </div>
             <div className="flex flex-col items-start w-full">
               <label>Last name</label>
-              <input type="name" className="h-12 w-full mt-1 rounded"></input>
+              <input
+                name="lastName"
+                type="text"
+                className="h-12 w-full mt-1 rounded pl-4"
+              ></input>
             </div>
           </div>
         </div>
@@ -34,28 +66,37 @@ const Contact = () => {
         <label className="text-start font-medium mt-4 ">
           Email<span className="text-greenSpring ml-2">(required)</span>
         </label>
-        <input type="email" className="h-12 mt-1 rounded"></input>
+        <input
+          name="email"
+          type="email"
+          className="h-12 mt-1 rounded pl-4"
+        ></input>
         <label className="text-start font-medium mt-4">
           Phone <span className="text-greenSpring ml-2">(required)</span>
         </label>
-        <input type="number" className="h-12 mt-1 rounded"></input>
-        <label className="text-start font-medium mt-4">
-          Service Needed{" "}
-          <span className="text-greenSpring ml-2">(required)</span>
-        </label>
-        <select className="h-12 mt-1 pl-2 text-sm rounded">
-          <option className="">Service Needed</option>
-          <option>Sales</option>
-          <option>Wholesale</option>
-        </select>
+        <input
+          name="phone"
+          type="number"
+          className="h-12 mt-1 rounded pl-4"
+        ></input>
+
         <label className="text-start font-medium mt-4">
           Message <span className="text-greenSpring ml-2">(required)</span>
         </label>
         <textarea
+          name="message"
           type="message"
-          className="h-32 mt-1 text-start p-2 rounded"
+          className="h-32 mt-1 text-start p-2 rounded pl-4e"
         ></textarea>
-      </div>
+        <div className="flex justify-center mt-12">
+          <button
+            onClick={sendEmail}
+            className="border border-black w-44 h-10 bg-axolotl text-white text-xl border-none rounded-md"
+          >
+            send
+          </button>
+        </div>
+      </form>
     </div>
   );
 };

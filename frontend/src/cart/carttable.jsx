@@ -14,14 +14,16 @@ const Carttable = (props) => {
         <th className="border-x-2 w-32">subtotal</th>
       </tr>
 
-      {cart.items.map((currentProduct, idx) => (
-        <Cartitem
-          key={idx}
-          id={currentProduct.id}
-          quantity={currentProduct.quantity}
-          currentProduct={currentProduct}
-        ></Cartitem>
-      ))}
+      {cart.items.map((currentProduct, idx) => {
+        return (
+          <Cartitem
+            key={idx}
+            id={currentProduct.id}
+            quantity={currentProduct.quantity}
+            currentProduct={currentProduct}
+          ></Cartitem>
+        );
+      })}
     </table>
   );
 };
