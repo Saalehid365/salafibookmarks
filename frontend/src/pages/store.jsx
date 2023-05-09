@@ -11,13 +11,13 @@ const Store = () => {
 
   return (
     <div
-      className="sm:pt-
+      className="sm:pt-20
     "
     >
       <div className="">
         <Storehero />
       </div>
-      <div className="flex sm:flex-col">
+      <div className="flex sm:flex-col sm:pt-4">
         <Filtermenu />
         <Transition
           show={!toggle}

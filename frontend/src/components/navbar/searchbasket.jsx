@@ -18,7 +18,7 @@ const Searchbasket = () => {
         to="shoppingcart"
         className="flex items-center text-greenSpring relative"
       >
-        <FaCartPlus />
+        <FaCartPlus className="text-gray-200" />
         {productsCount >= 1 ? (
           <div className="h-4 w-4 bg-red-600 text-xs text-white rounded-xl flex items-center justify-center  absolute sm:bottom-3 bottom-4 left-5">
             {productsCount}

@@ -10,10 +10,13 @@ const Filtermenu = () => {
   return (
     <div className="w-1/5 border-r-2 sm:w-screen sm:h-20 sm:border-none font-light">
       <div className="h-40  flex flex-col items-start pt-6 pl-6 border-b-4 sm:flex sm:flex-row sm:items-center sm:h-12 sm:pt-0 sm:justify-evenly sm:w-96 sm:border-0">
-        <FaSlidersH onClick={handleToggle} className="hidden sm:inline" />
+        <FaSlidersH
+          onClick={handleToggle}
+          className="hidden sm:inline sm:h-8 sm:w-8 sm:p-1 sm:rounded-md sm:bg-gray-200 sm:text-xs"
+        />
         <div className="flex items-center">
           <FaSort className="text-xs" />
-          <h2 className="uppercase ml-2">Sort by</h2>
+          <h2 className="uppercase ml-2 ">Sort by</h2>
         </div>
         <select className="w-60 h-10 mt-4 border px-2 bg-gray-100 sm:mt-0">
           <option>Price (low to high)</option>

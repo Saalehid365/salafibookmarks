@@ -26,19 +26,19 @@ const Contact = () => {
   };
 
   return (
-    <div className=" h-screen bg-gray-200 flex pt-40">
-      <div className="px-12 flex flex-col items-start w-2/5 justify-between h-2/5 mr-6 font-mono">
+    <div className=" h-screen bg-gray-200 flex pt-40 sm:flex-col sm:h-full sm:pb-6">
+      <div className="px-12 flex flex-col items-start w-2/5 justify-between h-2/5 mr-6 font-mono sm:w-full sm:text-start sm:px-4">
         <h2 className="text-5xl ">Lets work together</h2>
-        <p className="text-xl text-start">
+        <p className="text-xl text-start sm:text-sm sm:mt-4">
           Thank you so much for checking in. We feel honoured that you would
           consider working with us.
         </p>
-        <p className="text-xl text-start">
+        <p className="text-xl text-start sm:text-sm sm:mt-4">
           Please fill out our contact form and we'll get back to you within 48
           in'shaAllaah
         </p>
       </div>
-      <form ref={form} className=" flex flex-col w-2/4 px-6">
+      <form ref={form} className=" flex flex-col w-2/4 px-6 sm:mt-8 sm:w-full">
         <div className="flex flex-col items-start justify-between">
           <label className="font-medium">
             Name <span className="text-greenSpring ml-2">(required)</span>

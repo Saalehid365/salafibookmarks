@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className=" h-96 bg-gray-300 flex flex-col items-center justify-evenly sm:pt-6 sm:flex sm:flex-col sm:items-center  text-heavyMetal">
       <h2 className="text-3xl">Our Products</h2>
-      <p className="sm:w-72">
+      <p className="sm:w-96">
         They are made to aid the student in 3 things 1.keeping their books in
         good condition 2.making it easier to find the page you left 3. reminding
         you about the benefit of knowledge

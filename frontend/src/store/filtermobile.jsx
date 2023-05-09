@@ -7,7 +7,7 @@ const Filtermobile = () => {
 
   return (
     <div className=" flex flex-col items-start pl-6 pt-6 h-screen pb-96 justify-evenly shadow bg-slate-100">
-      <div className="w-full relative -top-10 mt-5 left-28">
+      <div className=" relative -top-10 mt-5 left-72">
         <p className="text-2xl hover:cursor-pointer" onClick={handleToggle}>
           X
         </p>
@@ -42,7 +42,7 @@ const Filtermobile = () => {
         <option>Al- Hasan al-Basri</option>
       </select>
 
-      <button className="h-10 w-24 bg-gray-300" onClick={handleToggle}>
+      <button className="h-10 w-24 bg-gray-300 mt-4" onClick={handleToggle}>
         {" "}
         Apply{" "}
       </button>

@@ -10,7 +10,7 @@ const Baskettotals = () => {
   console.log(subtotal);
   return (
     <div className="border mt-12 w-2/6 h-full flex flex-col items-start justify-evenly text-gray-600 mb-6 sm:border-0 sm:w-full">
-      <p className="h-24 pl-6 text-4xl pt-6 ">Basket totals</p>
+      <p className="h-24 pl-6 text-4xl pt-6 sm:text-2xl">Basket totals</p>
 
       <div className="flex h-40 pt-6 ">
         <h2 className="w-28 font-semibold">Delivery</h2>
