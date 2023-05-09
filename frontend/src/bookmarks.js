@@ -46,7 +46,7 @@ import product38 from "../src/assets/Bookmarks/This/Red.jpg";
 
 export const bookmarks = [
   {
-    id: "price_1MvTGvBEUJeTlFCNwT13id2n",
+    id: "price_1MvNkkBEUJeTlFCNUTN8dOhO",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
