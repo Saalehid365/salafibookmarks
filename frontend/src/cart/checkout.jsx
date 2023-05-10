@@ -4,7 +4,8 @@ import { ShopContext } from "../shop-context";
 const Checkout = () => {
   const cart = useContext(ShopContext);
 
-  const checkout = async () => {
+  const checkout = async (e) => {
+    e.preventDefault();
     await fetch("http://localhost:4000/checkout", {
       method: "POST",
       headers: {
