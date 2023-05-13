@@ -24,12 +24,11 @@ const Checkout = () => {
   };
 
   return (
-    <button
-      onClick={checkout}
-      className="bg-black w-2/4 text-white h-12 text-sm uppercase sm:w-72 rounded-md"
-    >
-      Proceed to checkout
-    </button>
+    <form className="bg-black w-2/4 text-white h-12 text-sm uppercase sm:w-72 rounded-md flex justify-center items-center">
+      <button type="submit" onClick={checkout}>
+        Proceed to checkout
+      </button>
+    </form>
   );
 };
 

@@ -1,148 +1,124 @@
 //guidance
-import product1 from "../src/assets/Bookmarks/Ikhlas/yellow.jpg";
-import product2 from "../src/assets/Bookmarks/Ikhlas/Black .jpg";
-import product3 from "../src/assets/Bookmarks/Ikhlas/Blue .jpg";
-import product4 from "../src/assets/Bookmarks/Ikhlas/Red.jpg";
-import product5 from "../src/assets/Bookmarks/Ikhlas/Green.jpg";
-import product6 from "../src/assets/Bookmarks/Ikhlas/Navy.jpg";
-import product7 from "../src/assets/Bookmarks/Ikhlas/Pink.jpg";
-import product8 from "../src/assets/Bookmarks/Ikhlas/Burgandy .jpg";
+import IY1 from "../src/assets/Bookmarks/Ikhlas/yellow.jpg";
+import IB1 from "../src/assets/Bookmarks/Ikhlas/Black .jpg";
+import IR1 from "../src/assets/Bookmarks/Ikhlas/Red.jpg";
+import IG1 from "../src/assets/Bookmarks/Ikhlas/Green.jpg";
+import IN1 from "../src/assets/Bookmarks/Ikhlas/Navy.jpg";
+import IP1 from "../src/assets/Bookmarks/Ikhlas/Pink.jpg";
 // ikhlas
-import product10 from "../src/assets/Bookmarks/Guidance/Black .jpg";
+import GB1 from "../src/assets/Bookmarks/Guidance/Black .jpg";
 import product11 from "../src/assets/Bookmarks/Guidance/Burgandy .jpg";
-import product12 from "../src/assets/Bookmarks/Guidance/Pink .jpg";
+import GP1 from "../src/assets/Bookmarks/Guidance/Pink .jpg";
 import product13 from "../src/assets/Bookmarks/Guidance/Pinkk.jpg";
-import product14 from "../src/assets/Bookmarks/Guidance/Red.jpg";
+import GR1 from "../src/assets/Bookmarks/Guidance/Red.jpg";
 
 //man
-import product15 from "../src/assets/Bookmarks/Man/Black.jpg";
+import MB1 from "../src/assets/Bookmarks/Man/Black.jpg";
 import product16 from "../src/assets/Bookmarks/Man/Burgandy .jpg";
-import product17 from "../src/assets/Bookmarks/Man/Green.jpg";
+import MG1 from "../src/assets/Bookmarks/Man/Green.jpg";
 import product18 from "../src/assets/Bookmarks/Man/Navy blue .jpg";
-import product19 from "../src/assets/Bookmarks/Man/Navy.jpg";
-import product20 from "../src/assets/Bookmarks/Man/Pink.jpg";
-import product21 from "../src/assets/Bookmarks/Man/Purple.jpg";
-import product22 from "../src/assets/Bookmarks/Man/Yellow .jpg";
+import MN1 from "../src/assets/Bookmarks/Man/Navy.jpg";
+import MP1 from "../src/assets/Bookmarks/Man/Pink.jpg";
+import MPU1 from "../src/assets/Bookmarks/Man/Purple.jpg";
+import MY1 from "../src/assets/Bookmarks/Man/Yellow .jpg";
 import product23 from "../src/assets/Bookmarks/Man/Pinkk.jpg";
 
 //seek
-import product24 from "../src/assets/Bookmarks/Seek/Black.jpg";
+import SB1 from "../src/assets/Bookmarks/Seek/Black.jpg";
 import product25 from "../src/assets/Bookmarks/Seek/Burgandy .jpg";
-import product26 from "../src/assets/Bookmarks/Seek/Green.jpg";
-import product27 from "../src/assets/Bookmarks/Seek/Navy.jpg";
-import product28 from "../src/assets/Bookmarks/Seek/Purple .jpg";
-import product29 from "../src/assets/Bookmarks/Seek/Red.jpg";
-import product30 from "../src/assets/Bookmarks/Seek/Yellow .jpg";
+import SG1 from "../src/assets/Bookmarks/Seek/Green.jpg";
+import SN1 from "../src/assets/Bookmarks/Seek/Navy.jpg";
+import SPU1 from "../src/assets/Bookmarks/Seek/Purple .jpg";
+import SR1 from "../src/assets/Bookmarks/Seek/Red.jpg";
+import SY1 from "../src/assets/Bookmarks/Seek/Yellow .jpg";
 
 // this
-import product31 from "../src/assets/Bookmarks/This/Black.jpg";
+import TB1 from "../src/assets/Bookmarks/This/Black.jpg";
 import product32 from "../src/assets/Bookmarks/This/Blue.jpg";
 import product33 from "../src/assets/Bookmarks/This/Burgandy.jpg";
-import product34 from "../src/assets/Bookmarks/This/Green.jpg";
-import product35 from "../src/assets/Bookmarks/This/Navy.jpg";
-import product36 from "../src/assets/Bookmarks/This/Purple.jpg";
-import product37 from "../src/assets/Bookmarks/This/Yellow.jpg";
-import product38 from "../src/assets/Bookmarks/This/Red.jpg";
+import TG1 from "../src/assets/Bookmarks/This/Green.jpg";
+import TN1 from "../src/assets/Bookmarks/This/Navy.jpg";
+import TPU1 from "../src/assets/Bookmarks/This/Purple.jpg";
+import TY1 from "../src/assets/Bookmarks/This/Yellow.jpg";
+import TR1 from "../src/assets/Bookmarks/This/Red.jpg";
 
 export const bookmarks = [
   {
-    id: "price_1MvNkkBEUJeTlFCNUTN8dOhO",
+    id: "price_1N6LHJBEUJeTlFCN2hm2HQbE",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "yellow",
-    image: product1,
+    Color: "Purple",
+    image: "NONE",
     title: "ikhlaas-bookmark",
     topseller: "yes",
   },
   {
-    id: "123",
+    id: "price_1N6LH0BEUJeTlFCN33ysBNxn",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "blue",
-    image: product2,
+    Color: "Pink",
+    image: IP1,
     title: "ikhlaas-bookmark",
   },
   {
-    id: "2",
+    id: "price_1N6LGjBEUJeTlFCNvjqrrht4",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "navy",
-    image: product3,
+    Color: "Red",
+    image: IR1,
     title: "ikhlaas-bookmark",
   },
   {
-    id: "1234",
+    id: "price_1N6LGVBEUJeTlFCNHmKS2KXY",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "red",
-    image: product4,
+    Color: "Black",
+    image: IB1,
     title: "ikhlaas-bookmark",
   },
   {
-    id: "13242",
+    id: "price_1N6LGGBEUJeTlFCNebdbFHE4",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "green",
-    image: product5,
+    Color: "Navy",
+    image: IN1,
     title: "ikhlaas-bookmark",
   },
   {
-    id: "1342232",
+    id: "price_1N6LFyBEUJeTlFCNhBGBZN7S",
     Quote:
       "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
     Author: "Ibn Al-Qayyim",
     Reference: "Dar Miftah as-Sa'ada",
     Price: 1.99,
-    Color: "yellow",
-    image: product6,
+    Color: "Green",
+    image: IG1,
     title: "ikhlaas-bookmark",
   },
   {
-    id: "12756",
-    Quote:
-      "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
-    Author: "Ibn Al-Qayyim",
-    Reference: "Dar Miftah as-Sa'ada",
-    Price: 1.99,
-    Color: "red",
-    image: product7,
-    title: "ikhlaas-bookmark",
-  },
-  {
-    id: "126r7",
-    Quote:
-      "Ikhlaas is the way to salvation, Islam is the ship to safety and Eeman is the sea",
-    Author: "Ibn Al-Qayyim",
-    Reference: "Dar Miftah as-Sa'ada",
-    Price: 1.99,
-    Color: "red",
-    image: product8,
-    title: "ikhlaas-bookmark",
-  },
-  {
-    id: "1267",
+    id: "price_1N6LLQBEUJeTlFCNrrH44apF",
     Quote:
       "Guidance is not attained except with knowledge and correct direction is not attained except with patience",
     Author: "Ibn Taymiyyah",
     Reference: "Majmu` al-Fatawa (10/40)",
     Price: 1.99,
     Color: "green",
-    image: product10,
+
     title: "guidance-bookmark",
   },
   {
@@ -157,14 +133,14 @@ export const bookmarks = [
     title: "guidance-bookmark",
   },
   {
-    id: "1255",
+    id: "price_1N6LN5BEUJeTlFCNLcYG8CxJ",
     Quote:
       "Guidance is not attained except with knowledge and correct direction is not attained except with patience",
     Author: "Ibn Taymiyyah",
     Reference: "Majmu` al-Fatawa (10/40)",
     Price: 1.99,
     Color: "pink",
-    image: product12,
+    image: GP1,
     title: "guidance-bookmark",
   },
   {
@@ -179,25 +155,25 @@ export const bookmarks = [
     title: "guidance-bookmark",
   },
   {
-    id: "1352",
+    id: "price_1N6LMcBEUJeTlFCNr0swWu8T",
     Quote:
       "Guidance is not attained except with knowledge and correct direction is not attained except with patience",
     Author: "Ibn Taymiyyah",
     Reference: "Majmu` al-Fatawa (10/40)",
     Price: 1.99,
     Color: "red",
-    image: product14,
+    image: GR1,
     title: "guidance-bookmark",
   },
   {
-    id: "14622",
+    id: "price_1N6LDiBEUJeTlFCNGsMw7HP2",
     Quote:
       "Man almost forgets the knowledge he has gained because of the sins he has committed",
     Author: "Ibn Al-Qayyim",
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "black",
-    image: product15,
+    image: MB1,
     title: "man-bookmark",
   },
   {
@@ -212,18 +188,18 @@ export const bookmarks = [
     title: "man-bookmark",
   },
   {
-    id: "1552",
+    id: "price_1N6L5GBEUJeTlFCNdWoHgyba",
     Quote:
       "Man almost forgets the knowledge he has gained because of the sins he has committed",
     Author: "Ibn Al-Qayyim",
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "green",
-    image: product17,
+    image: MG1,
     title: "man-bookmark",
   },
   {
-    id: "1266",
+    id: "price_1N6LDPBEUJeTlFCNeqL4VBzK",
     Quote:
       "Man almost forgets the knowledge he has gained because of the sins he has committed",
     Author: "Ibn Al-Qayyim",
@@ -242,18 +218,18 @@ export const bookmarks = [
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "navy",
-    image: product19,
+    image: MN1,
     title: "man-bookmark",
   },
   {
-    id: "128",
+    id: "price_1N6LEZBEUJeTlFCNVV2zhdzb",
     Quote:
       "Man almost forgets the knowledge he has gained because of the sins he has committed",
     Author: "Ibn Al-Qayyim",
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "pink",
-    image: product20,
+    image: MP1,
     title: "man-bookmark",
   },
   {
@@ -264,18 +240,17 @@ export const bookmarks = [
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "light pink",
-    image: product21,
     title: "man-bookmark",
   },
   {
-    id: "122134",
+    id: "price_1N6LEuBEUJeTlFCN5U7Hj1cM",
     Quote:
       "Man almost forgets the knowledge he has gained because of the sins he has committed",
     Author: "Ibn Al-Qayyim",
     Reference: "Al-Fawa'id",
     Price: 1.99,
     Color: "purple",
-    image: product22,
+    image: MPU1,
     title: "man-bookmark",
   },
   {
@@ -290,158 +265,156 @@ export const bookmarks = [
     title: "man-bookmark",
   },
   {
-    id: "143562",
+    id: "price_1N6LJ0BEUJeTlFCN1PMBuhMt",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
     Color: "yellow",
-    image: product24,
+    image: SY1,
     title: "seek-bookmark",
     topseller: "yes",
   },
   {
-    id: "1y542",
+    id: "price_1N6LJvBEUJeTlFCNfzhCt3CI",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product25,
+    Color: "purple",
+    image: SPU1,
     title: "seek-bookmark",
   },
   {
-    id: "15672",
+    id: "price_1N6LJGBEUJeTlFCNbPHvf7tM",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product26,
+    Color: "pink",
     title: "seek-bookmark",
   },
   {
-    id: "16792",
+    id: "price_1N6LIfBEUJeTlFCNYhmLnrK7",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product27,
+    Color: "navy",
+    image: SN1,
     title: "seek-bookmark",
   },
   {
-    id: "1342",
+    id: "price_1N6LITBEUJeTlFCNDcPLAvnj",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product28,
+    Color: "red",
+    image: SR1,
     title: "seek-bookmark",
   },
   {
-    id: "14566792",
+    id: "price_1N6LIEBEUJeTlFCNPrpkGqXS",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product29,
+    Color: "green",
+    image: SG1,
     title: "seek-bookmark",
   },
   {
-    id: "1567892",
+    id: "price_1N6LI3BEUJeTlFCNBIMsLpbz",
     Quote:
       "Seek knowledgee in a way that does not harm your worship and worship in a way that does not harm your knowledge. Who acts without knowledge harms more than benefits",
     Author: "Al-Hasan al-Basri",
     Reference: "Ibn `Abd al-bar (p.215)",
     Price: 1.99,
-    Color: "yellow",
-    image: product30,
+    Color: "black",
+    image: SB1,
     title: "seek-bookmark",
   },
   {
-    id: "124612",
+    id: "price_1N6LPiBEUJeTlFCNc7tRnRL6",
+    Quote:
+      "This knowledge is a matter of Deen, so be careful who you take your Deen from",
+    Author: "Muhammad Ibn Sireen",
+    Reference: "n/a",
+    Price: 1.99,
+    Color: "purple",
+    image: TPU1,
+    title: "seek-bookmark",
+  },
+  {
+    id: "price_1N6LPVBEUJeTlFCNosuO0PbU",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
     Color: "yellow",
-    image: product31,
+    image: TY1,
     title: "seek-bookmark",
   },
   {
-    id: "12111",
+    id: "",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product32,
-    title: "seek-bookmark",
-  },
-  {
-    id: "122222",
-    Quote:
-      "This knowledge is a matter of Deen, so be careful who you take your Deen from",
-    Author: "Muhammad Ibn Sireen",
-    Reference: "n/a",
-    Price: 1.99,
-    Color: "yellow",
-    image: product33,
+    Color: "pink",
     title: "this-bookmark",
   },
   {
-    id: "1212122",
+    id: "price_1N6LPMBEUJeTlFCNTOD6f0q0",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product34,
+    Color: "black",
+    image: TB1,
     title: "this-bookmark",
   },
   {
-    id: "121232312",
+    id: "price_1N6LOkBEUJeTlFCN8leHZ8Aa",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product35,
+    Color: "navy",
+    image: TN1,
     title: "this-bookmark",
   },
   {
-    id: "112342",
+    id: "price_1N6LOVBEUJeTlFCNjHkWM0y3",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product36,
+    Color: "red",
+    image: TR1,
     title: "this-bookmark",
   },
   {
-    id: "12432",
+    id: "price_1N6LONBEUJeTlFCNbeFuMZFa",
     Quote:
       "This knowledge is a matter of Deen, so be careful who you take your Deen from",
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product37,
+    Color: "green",
+    image: TG1,
     title: "this-bookmark",
     topseller: "yes",
   },
@@ -452,8 +425,7 @@ export const bookmarks = [
     Author: "Muhammad Ibn Sireen",
     Reference: "n/a",
     Price: 1.99,
-    Color: "yellow",
-    image: product38,
+    Color: "burgandy",
     title: "this-bookmark",
   },
 ];

@@ -42,6 +42,8 @@ export const products = [
   },
 ];
 
-products.map((product) => {
-  unit_amount: product[price];
+const stripe = require("stripe")("process.env.REACT_APP_TEST");
+
+const product = await stripe.products.create({
+  name: "Gold Special",
 });

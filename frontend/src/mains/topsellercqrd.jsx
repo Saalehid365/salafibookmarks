@@ -9,10 +9,10 @@ const Topsellercard = (props) => {
   return (
     <div className="relative">
       <div class="w-80 bg-white shadow rounded hover:scale-105 hover:transform  sm:h-42  sm:hover:transform-none sm:hover:scale-0 sm:flex sm:flex-col sm:justify-center sm:items-center sm:m-0 sm:w-full">
-        <div class="h-full w-full bg-gray-100 flex flex-col justify-between p-2 bg-cover bg-center sm:h-24 sm:w-24 sm:bg-none sm:flex-none sm:p-0">
+        <div class="h-full w-full  flex flex-col justify-between p-2 bg-cover bg-center sm:h-24 sm:w-24 sm:bg-none sm:flex-none sm:p-0">
           <img src={product.image} alt="productImg" className="h-60 "></img>
           {productQuantity >= 1 && (
-            <div className="bg-gray-100 h-10 w-24  bottom-56 left-24 flex items-center justify-center rounded">
+            <div className="bg-gray-100 h-10 w-28  bottom-60 left-24 flex items-center justify-center rounded absolute sm:left-12 sm:bottom-12 sm:h-6 sm:hidden">
               <h3 className="text-xs  text-gray-600">
                 {productQuantity} added to cart
               </h3>
@@ -24,8 +24,11 @@ const Topsellercard = (props) => {
           <p class="text-gray-400 font-light text-xs text-center">
             {product.Author}
           </p>
-          <h1 class="text-gray-800 w-full text-center mt-1 text-ellipsis whitespace-nowrap overflow-hidden font-bold sm:w-full sm:text-xs">
+          <h1 class="text-gray-800 w-full text-center mt-1 text-ellipsis whitespace-nowrap overflow-hidden font-semibold sm:w-full sm:text-xs">
             {product.Quote}
+          </h1>
+          <h1 class="text-gray-800 w-full text-center mt-1 text-ellipsis whitespace-nowrap overflow-hidden font-semibold sm:w-full sm:text-xs">
+            {product.Color}
           </h1>
           <p class="text-center text-gray-800 mt-1 sm:text-xs">
             £{product.Price}

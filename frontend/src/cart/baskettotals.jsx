@@ -16,19 +16,16 @@ const Baskettotals = () => {
         <h2 className="w-28 font-semibold">Delivery</h2>
         <div className="flex flex-col items-start justify-start">
           <div className="">
-            <input type="checkbox" className="mr-1" value={3}></input>
             <label htmlFor="standard">
               Standard Delivery &#40;3-5 Days&#41;: £3
             </label>
           </div>
           <div className="mt-4">
-            <input type="checkbox" className="mr-1" value={5}></input>
             <label htmlFor="express">
               Next Day Delivery &#40;1-2 Days&#41;: £5
             </label>
           </div>
           <div className="mt-4">
-            <input type="checkbox" className="mr-1" value={10}></input>
             <label htmlFor="express">
               International Delivery &#40;1-2 Days&#41;: £10
             </label>

@@ -11,7 +11,7 @@ const Store = () => {
 
   return (
     <div
-      className="sm:pt-20
+      className="pt-14 sm:pt-20
     "
     >
       <div className="">
