@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { ShopContext } from "../shop-context";
 import { getProductData } from "../bookmarks";
 import { FaAngleDown, FaAngleUp, FaTimes } from "react-icons/fa";

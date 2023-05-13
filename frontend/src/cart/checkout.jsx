@@ -24,7 +24,11 @@ const Checkout = () => {
   };
 
   return (
-    <form className="bg-black w-2/4 text-white h-12 text-sm uppercase sm:w-72 rounded-md flex justify-center items-center">
+    <form
+      className="bg-black w-2/4 text-white h-12 text-sm uppercase sm:w-72 rounded-md flex justify-center items-center"
+      action="/create-checkout-session"
+      method="POST"
+    >
       <button type="submit" onClick={checkout}>
         Proceed to checkout
       </button>
