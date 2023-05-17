@@ -8,6 +8,10 @@ app.use(cors());
 app.use(express.static("public"));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello World, from express");
+});
+
 app.post("/checkout", async (req, res) => {
   const items = req.body.items;
   let lineItems = [];
