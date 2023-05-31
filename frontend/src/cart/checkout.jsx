@@ -6,7 +6,7 @@ const Checkout = () => {
 
   const checkout = async (e) => {
     e.preventDefault();
-    await fetch("https://bookmarks-server.onrender.com", {
+    await fetch("https://bookmarks-server.onrender.com/checkout", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
